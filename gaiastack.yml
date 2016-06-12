@@ -1,0 +1,22 @@
+image: docker.oa.com:8080/gaia/ut-java-base:latest
+
+services:
+    - mysql
+
+env:    
+    - MYSQL_PORT = tcp://10.123.19.68:3306
+    - MYSQL_PORT_3306_TCP_ADDR = 10.123.19.68
+    - MYSQL_PORT_3306_TCP = tcp://10.123.19.68:3306
+    - MYSQL_PORT_3306_TCP_PROTO = tcp
+    - MYSQL_PORT_3306_TCP_PORT = 3306
+
+install:
+    - echo $MYSQL_PORT
+
+before_script:
+    - echo "This is an before_script"
+    - echo $MYSQL_PORT_3306_TCP_ADDR
+    - echo "Run before_script finished!"
+
+script:
+    - mvn test
