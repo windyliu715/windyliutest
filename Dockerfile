@@ -4,5 +4,6 @@
 FROM daocloud.io/library/centos:7.2.1511
 MAINTAINER g_DATA_DC_GAIA@tencent.com
 ADD hello_world.sh /data/tdwadmin/tdwenv
-ADD hello_world.sh /data/tdwadmin/windyliu 
+ADD hello_world.sh /data/tdwadmin/windyliu
+ADD hello_world.sh /data/tdwadmin/windyliu1
 #RUN rm -rf $HADOOP_YARN_HOME/etc && sed -i "s/null &/null/g" $HADOOP_YARN_HOME/sbin/yarn-daemon.sh
