@@ -8,4 +8,5 @@ ADD hello_world.sh /data/tdwadmin/windyliu
 ADD hello_world.sh /data/tdwadmin/windyliu1
 ADD hello_world.sh /data/tdwadmin/windyliu2
 ADD hello_world.sh /data/tdwadmin/windyliu30918
+ADD hello_world.sh /data/tdwadmin/windyliu30919
 #RUN rm -rf $HADOOP_YARN_HOME/etc && sed -i "s/null &/null/g" $HADOOP_YARN_HOME/sbin/yarn-daemon.sh
